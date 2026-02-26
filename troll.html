@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đạt</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #message {
+            margin-top: 20px;
+            color: #28a745;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Chào! 👋</h1>
+        <p>Thử bấm cái nút bên dưới đi:</p>
+        <button onclick="chaoHoi()">Bấm vào đây!</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        function chaoHoi() {
+            // Lấy vị trí để hiển thị tin nhắn
+            const vungHienThi = document.getElementById("message");
+            
+            // Thay đổi nội dung khi bấm nút
+            vungHienThi.innerHTML = "Ngu";
+            
+            // Hiện một thông báo nhỏ (alert)
+            alert("Nhìn cái con c");
+        }
+    </script>
+
+</body>
+</html>
